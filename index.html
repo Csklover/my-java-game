@@ -7,13 +7,13 @@
 </head>
 <body>
     <h1>Play Bounce Game</h1>
+    <button onclick="startGame()">Launch Game</button>
 
     <script>
-        (async function () {
-            await cheerpjInit(); // Initialize CheerpJ
-            cheerpjCreateDisplay(800, 600); // Create Java display
-            await cheerpjRunJar("/app/BounceGame.jar"); // Run the game JAR
-        })();
+        async function startGame() {
+            await cheerpjInit();
+            cheerpjRunJar("/app/BounceGame.jar");
+        }
     </script>
 </body>
 </html>
