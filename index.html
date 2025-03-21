@@ -2,11 +2,20 @@
 <html>
 <head>
     <title>Bounce Game</title>
+    <!-- Load CheerpJ -->
     <script src="https://cjrtnc.leaningtech.com/cheerpj_2_3.js"></script>
 </head>
-<body onload="cheerpjInit();">
+<body>
     <h1>Play Bounce Game</h1>
+    
+    <!-- Initialize CheerpJ after page load -->
+    <script>
+        window.onload = function() {
+            cheerpjInit();
+        };
+    </script>
+
+    <!-- Button to launch the game -->
     <button onclick="cheerpjRunJar('BounceGame.jar');">Launch Game</button>
 </body>
 </html>
-
